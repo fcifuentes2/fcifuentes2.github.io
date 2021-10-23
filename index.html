@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+   <!-- <script type="text/javascript">
+        window.onload = function(){
+               document.getElementById("boton").onclick=sumar;
+           }
+           function sumar(){
+               var bronce = document.getElementById("bronce").value; 
+               var broncehd = document.getElementById("broncehd").value;
+               suma = parseInt(bronce) + parseInt(broncehd) ;
+               alert("la suma es: " +suma);
+               document.getSelection
+           }
+       </script> -->
+</head>
+<body>
+
+    <h3>Calculadora Integral Chile</h3>
+
+    <form class="container">
+    <div class="c1">
+    <h4>Clientes Nuevos</h4>
+    <label for="pplatahd"><input id="pplatahd" type="radio" name="plan" value="27580">Plan Plata Hd</label> <br>
+    <label for="porohd"><input id="porohd" type="radio" name="plan" value="32450">Plan Oro Hd</label> <br>
+    <label for="poroplus"><input id="poroplus" type="radio" name="plan" value="37000">Plan Oro Plus Hd</label> <br>
+    <label for="oro4k"><input id="oro4k" type="radio" name="plan" value="41230">Plan Oro 4K</label> <br>
+    <label for="broncelite"><input id="broncelite" type="radio" name="plan" value="20610">Plan Bronce Lite</label>
+    </div>  
+    <div class="c2">
+    <h4>Clientes Cartera</h4>
+    <label for="bronce"><input id="bronce" type="radio" name="plan" value="24940">Pack Bronce</label> <br>
+    <label for="broncehd"><input id="broncehd" type="radio" name="plan" value="27590">Pack Bronce Hd</label> <br>
+    <label for="plata"><input id="plata" type="radio" name="plan" value="32860">Pack Plata</label> <br>
+    <label for="platahd"><input id="platahd" type="radio" name="plan" value="35510">Pack Plata Hd</label> <br> 
+    <label for="orosd"><input id="orosd" type="radio" name="plan" value="37730">Pack Oro Sd</label> <br>
+    <label for="orohd"><input id="orohd" type="radio" name="plan" value="40380">Pack Oro Hd</label> <br>
+    <label for="oroplus"><input id="oroplus" type="radio" name="plan" value="41210">Pack Oro Plus</label> <br>
+    <label for="oroplushd"><input id="oroplushd" type="radio" name="plan" value="44400">plan Oro Plus Hd</label>
+    </div>  
+   
+    <div class="c3">
+      <h4>Total de decos</h4>
+      <label for="3"><input id="3" type="radio" name="equipos" value="3910"> 3 decos</label><br>
+      <label for="4"><input id="4" type="radio" name="equipos" value="7820"> 4 decos</label><br>
+      <label for="5"><input id="5" type="radio" name="equipos" value="11730"> 5 decos</label><br>
+      <label for="6"><input id="6" type="radio" name="equipos" value="15640"> 6 decos</label><br>
+      <label for="7"><input id="7" type="radio" name="equipos" value="19550"> 7 decos</label><br>
+      <label for="8"><input id="8" type="radio" name="equipos" value="23460"> 8 decos</label>
+      </div>
+      <div class="c4">
+        <h4>Paquetes Premium</h4>
+        <label for="tnt"><input id="tnt" type="checkbox" name="premium1" value="8730"> Tnt $8.730-----------></label>
+        <label for="rvp1"><input id="rvp1" type="checkbox" name="rvp1" value="-4365"> Tnt 50%</label><br>
+        <label for="tntv"><input id="tntv" type="checkbox" name="premium2" value="7920"> Tnt $7.920-----------></label>
+        <label for="rvp2"><input id="rvp2" type="checkbox" name="rvp2" value="-3960"> Tnt 50%</label> <br>   
+        <label for="tnthd"><input id="tnthd" type="checkbox" name="premium3" value="11300"> Tnt Hd $11.300-----></label>
+        <label for="rvp3"><input id="rvp3" type="checkbox" name="rvp3" value="-5650"> Tnt Hd 50%</label> <br>
+        <label for="hbo"><input id="hbo" type="checkbox" name="premium4" value="7920"> Hbo-------------------></label>
+        <label for="rvp4"><input id="rvp4" type="checkbox" name="rvp4" value="-3960"> Hbo 50%</label> <br>
+        <label for="star"><input id="star" type="checkbox" name="premium5" value="7920"> Star Premium</label> <br>
+        <label for="combo1"><input id="combo1" type="checkbox" name="premium6" value="7920"> Combo $7.960</label> <br>
+        <label for="combo2"><input id="combo2" type="checkbox" name="premium7" value="8500"> Combo $8.500</label> <br>
+        <label for="foxsport"><input id="foxsport" type="checkbox" name="premium8" value="9970"> Fox Sport-------------></label>
+        <label for="rvp5"><input id="rvp5" type="checkbox" name="rvp5" value="-4985"> Fox Sport 50%</label> <br>
+        <label for="todostar"><input id="todostar" type="checkbox" name="premium9" value="13360"> Todo Star-------------></label>
+        <label for="rvp6"><input id="rvp6" type="checkbox" name="rvp6" value="-6680"> Todo Star 50%</label> <br>
+        <label for="hotpack"><input id="hotpack" type="checkbox" name="premium10" value="8630"> Hot Pack--------------></label>
+        <label for="rvp7"><input id="rvp7" type="checkbox" name="rvp7" value="-4315"> Hot Pack 50%</label> <br>
+        <label for="exxotico"><input id="exxotico" type="checkbox" name="premium11" value="8630"> Exxotico--------------></label>
+        <label for="rvp8"><input id="rvp8" type="checkbox" name="rvp8" value="-4315"> Exxotico 50%</label> <br>
+        <label for="full"><input id="full" type="checkbox" name="premium12" value="1540"> Full Service</label>
+        </div> 
+    <div class="c5">
+    <h4>Promociones Rvo</h4>
+    <label for="rvo1"><input id="rvo1" type="radio" name="rvo" value="-2000"> $2.000</label><br>
+    <label for="rvo2"><input id="rvo2" type="radio" name="rvo" value="-4000"> $4.000</label><br>
+    <label for="rvo3"><input id="rvo3" type="radio" name="rvo" value="-5000"> $5.000</label><br>
+    <label for="rvo4"><input id="rvo4" type="radio" name="rvo" value="-6000"> $6.000</label><br>
+    <label for="rvo5"><input id="rvo5" type="radio" name="rvo" value="-7000"> $7.000</label><br>
+    <label for="rvo6"><input id="rvo6" type="radio" name="rvo" value="-8000"> $8.000</label><br>
+    <label for="rvo7"><input id="rvo7" type="radio" name="rvo" value="-9000"> $9.000</label><br>
+    <label for="rvo8"><input id="rvo8" type="radio" name="rvo" value="-10000"> $10.000</label><br>
+    <label for="rvo9"><input id="rvo9" type="radio" name="rvo" value="-11000"> $11.000</label><br>
+    <label for="rvo10"><input id="rvo10" type="radio" name="rvo" value="-12000"> $12.000</label><br>
+    <label for="rvo11"><input id="rvo11" type="radio" name="rvo" value="-16000"> $16.000</label><br>
+    <label for="rvo12"><input id="rvo12" type="checkbox" name="rvoEquipo" value="-1955"> 50% deco Adicional</label>
+    </div>
+    <div class="c6">
+    <button>Borrar</button>
+    </form>
+    <br>
+    <div id="resultado"></div>
+    </div>
+    
+
+    <script>
+        // buscar el <form> y guardarlo en una variable
+        
+        const form = document.querySelector('form');
+  
+        // decir que en el evento enviar se sume el total
+        form.addEventListener('change', obtenerTotal);
+       // form.addEventListener('submit', obtenerTotal);
+  
+        function obtenerTotal(event) {
+          // evitar enviar el formulario que ocasiona que se refresque la pagina
+        event.preventDefault();
+  
+          // obtener todos los input radio
+         // const formData = new FormData(event.target);
+  
+          // convertir los valores a String, o colocar un 0 si no elegieron algo
+          const planRadio = document.querySelector('input[name=plan]:checked')
+          const rvoRadio = document.querySelector('input[name=rvo]:checked')
+          const equiposRadio = document.querySelector('input[name=equipos]:checked')
+          const premium1Check = document.querySelector('input[name=premium1]:checked')
+          const premium2Check = document.querySelector('input[name=premium2]:checked')
+          const premium3Check = document.querySelector('input[name=premium3]:checked')
+          const premium4Check = document.querySelector('input[name=premium4]:checked')
+          const premium5Check = document.querySelector('input[name=premium5]:checked')
+          const premium6Check = document.querySelector('input[name=premium6]:checked')
+          const premium7Check = document.querySelector('input[name=premium7]:checked')
+          const premium8Check = document.querySelector('input[name=premium8]:checked')
+          const premium9Check = document.querySelector('input[name=premium9]:checked')
+          const premium10Check = document.querySelector('input[name=premium10]:checked')
+          const premium11Check = document.querySelector('input[name=premium11]:checked')
+          const premium12Check = document.querySelector('input[name=premium12]:checked')
+          const rvp1Check = document.querySelector('input[name=rvp1]:checked')
+          const rvp2Check = document.querySelector('input[name=rvp2]:checked')
+          const rvp3Check = document.querySelector('input[name=rvp3]:checked')
+          const rvp4Check = document.querySelector('input[name=rvp4]:checked')
+          const rvp5Check = document.querySelector('input[name=rvp5]:checked')
+          const rvp6Check = document.querySelector('input[name=rvp6]:checked')
+          const rvp7Check = document.querySelector('input[name=rvp7]:checked')
+          const rvp8Check = document.querySelector('input[name=rvp8]:checked')
+          const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')          
+
+          const plan = planRadio ?  Number(planRadio.value): 0
+          const rvo = rvoRadio ?  Number(rvoRadio.value): 0
+          const equipos = equiposRadio ?  Number(equiposRadio.value): 0
+          const premium1 = premium1Check ?  Number(premium1Check.value): 0
+          const premium2 = premium2Check ?  Number(premium2Check.value): 0
+          const premium3 = premium3Check ?  Number(premium3Check.value): 0
+          const premium4 = premium4Check ?  Number(premium4Check.value): 0
+          const premium5 = premium5Check ?  Number(premium5Check.value): 0
+          const premium6 = premium6Check ?  Number(premium6Check.value): 0
+          const premium7 = premium7Check ?  Number(premium7Check.value): 0
+          const premium8 = premium8Check ?  Number(premium8Check.value): 0
+          const premium9 = premium9Check ?  Number(premium9Check.value): 0
+          const premium10 = premium10Check ?  Number(premium10Check.value): 0
+          const premium11 = premium11Check ?  Number(premium11Check.value): 0
+          const premium12 = premium12Check ?  Number(premium12Check.value): 0
+          const rvp1 = rvp1Check ?  Number(rvp1Check.value): 0
+          const rvp2 = rvp2Check ?  Number(rvp2Check.value): 0
+          const rvp3 = rvp3Check ?  Number(rvp3Check.value): 0
+          const rvp4 = rvp4Check ?  Number(rvp4Check.value): 0
+          const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
+          const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
+          const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
+          const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
+          const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
+                    
+          const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
+          premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
+          premium12 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvoEquipo;
+          document.getElementById('resultado').innerHTML = result;
+        
+        }
+      </script>
+    
+</body>
+</html>
