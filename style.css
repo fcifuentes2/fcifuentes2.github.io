@@ -3,13 +3,56 @@
     margin: 0;
     padding: 0;
   }
+ 
   html {
     font-size: 62.5%;
+    background-color: #0075a8;
   }
+  input:checked + label {
+    color: black;
+  }
+
+  hr {
+    width: 195px;
+  }
+  button {
+    width: 70px;
+    height: 25px;
+    font-size:medium;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  input[type="radio"] {
+      background-color: black;
+      width: 17px;
+      height: 17px;
+  }
+  input[type="checkbox"] {
+    background: black;
+    width: 20px;
+    height: 20px;
+    }
+    
   .container {
     display: flex;
     flex-wrap: wrap;
+    background-color: #0075a8;
+    color: white;
+    font:bolder;
   }
+
+  
+
+.rvpEspacio{
+  position: absolute;
+  left: 245px;  
+}
+.cheEspacio{
+  position: absolute;
+  left: 220px;
+}
+
+
   .c1,
   .c2,
   .c3,
@@ -20,29 +63,44 @@
     min-width: 15rem;
     height: auto;
     font-size: x-large;
+    padding-left: 20px;
+    padding-top: 10px;
   }
-  .c1 {
-    background-color: #003476;
-  }
-  .c2 {
-    background-color: #0062d2;
-  }
-  .c3 {
-    background-color: #b4d2f7;
-  }
-  .c4 {
-    background-color: #d5dfef;
-  }
-  .c5 {
-    background-color: #dfe1e5;
-  }
-  .c6 {
-    background-color: #dfe1e5;
+  @media (max-width: 600px) {
+    .flotante{
+      position: fixed;
+      top: 370px;
+      right: 5px;
+    }
+    .flotanteButton{
+      position: fixed;
+      top: 400px;
+      right: 5px;
+    }
+    .c1 {
+      order: 2;
+    }
+    .c2 {
+      order: 1;
+    }
+    .c3 {
+      order: 4;
+    }
+    .c4 {
+      order: 3;
+    }
+    .c5 {
+      order: 5;
+    }
+    .c6 {
+      order: 6;
+      }
   }
   @media (min-width: 600px) {
     .c1 {
       width: 50%;
       /* order: 1; */
+       /* order: 1; */
     }
     .c2 {
       width: 50%;
@@ -85,4 +143,5 @@
         width: 34%;
       }
   }
-  
+ 
+ 
