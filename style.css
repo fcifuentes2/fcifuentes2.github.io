@@ -1,147 +1,185 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
- 
-  html {
-    font-size: 62.5%;
-    background-color: #0075a8;
-  }
-  input:checked + label {
-    color: black;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  hr {
-    width: 195px;
-  }
-  button {
-    width: 70px;
-    height: 25px;
-    font-size:medium;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-  }
-  input[type="radio"] {
-      background-color: black;
-      width: 17px;
-      height: 17px;
-  }
-  input[type="checkbox"] {
-    background: black;
-    width: 20px;
-    height: 20px;
-    }
-    
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #0075a8;
-    color: white;
-    font:bolder;
-  }
+html {
+  font-size: 62.5%;
+  background-color: rgb(43, 43, 43);
+}
+input:checked + label {
+  color: yellow;
+}
 
+.nuevos {
+  width: 175px;
+}
+.cartera {
+  width: 180px;
+}
+.decos {
+  width: 155px;
+}
+.premium {
+  width: 200px;
+}
+.rvo {
+  width: 185px;
+}
+.extras {
+  width: 75px;
+}
+h4{
+  color: black;
+  background-color: yellow;
+  width: 195px;
+  border-radius: 30%;
+}
+button {
+  width: 70px;
+  height: 25px;
+  font-size:medium;
+  font-weight: bold;
+  color: black;
+}
+input[type="radio"] {
+    background-color:white;
+    width: 17px;
+    height: 17px;
+}
+input[type="checkbox"] {
+  background: black;
+  width: 20px;
+  height: 20px;
+  }
   
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  font:bolder;
+  
+}
+#modo {
+  color: white;
+}
+
 
 .rvpEspacio{
-  position: absolute;
-  left: 245px;  
+position: absolute;
+left: 265px;  
 }
 .cheEspacio{
-  position: absolute;
-  left: 220px;
+position: absolute;
+left: 245px;
 }
 
 
-  .c1,
-  .c2,
-  .c3,
-  .c4,
-  .c5,
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+  width: 100%;
+  min-width: 15rem;
+  height: auto;
+  font-size: x-large;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 20%;
+  background-color: rgb(80, 79, 79);
+}
+@media (max-width: 600px) {
+  .nuevos {
+    width: 200px;
+  }
+  .cartera {
+    width: 200px;
+  }
+  .decos {
+    width: 185px;
+  }
+  .premium {
+    width: 235px;
+  }
+  .rvo {
+    width: 225px;
+  }
+  .extras {
+    width: 90px;
+  }
+  .flotante{
+    position: fixed;
+    top: 370px;
+    right: 5px;
+  }
+  .flotanteButton{
+    position: fixed;
+    top: 400px;
+    right: 5px;
+  }
+  .c1 {
+    order: 2;
+  }
+  .c2 {
+    order: 1;
+  }
+  .c3 {
+    order: 4;
+  }
+  .c4 {
+    order: 3;
+  }
+  .c5 {
+    order: 5;
+  }
   .c6 {
+    order: 6;
+    }
+}
+@media (min-width: 600px) {
+  .c1 {
+    width: 50%;
+  }
+  .c2 {
+    width: 50%;
+  }
+  .c3 {
     width: 100%;
-    min-width: 15rem;
-    height: auto;
-    font-size: x-large;
-    padding-left: 20px;
-    padding-top: 10px;
   }
-  @media (max-width: 600px) {
-    .flotante{
-      position: fixed;
-      top: 370px;
-      right: 5px;
-    }
-    .flotanteButton{
-      position: fixed;
-      top: 400px;
-      right: 5px;
-    }
-    .c1 {
-      order: 2;
-    }
-    .c2 {
-      order: 1;
-    }
-    .c3 {
-      order: 4;
-    }
-    .c4 {
-      order: 3;
-    }
-    .c5 {
-      order: 5;
-    }
-    .c6 {
-      order: 6;
-      }
+  .c4 {
+    width: 100%;
   }
-  @media (min-width: 600px) {
-    .c1 {
-      width: 50%;
-      /* order: 1; */
-       /* order: 1; */
-    }
-    .c2 {
-      width: 50%;
-      /* order: 2; */
-    }
-    .c3 {
-      width: 100%;
-      /* order: 3; */
-    }
-    .c4 {
-      width: 100%;
-      /* order: 4; */
-    }
-    .c5 {
-      width: 100%;
-      /* order: 5; */
-    }
-    .c6 {
-        width: 100%;
-        /* order: 5; */
-      }
+  .c5 {
+    width: 100%;
   }
-  @media (min-width: 800px) {
-    .c1 {
-      width: 33%;
-    }
-    .c2 {
-      width: 33%;
-    }
-    .c3 {
+  .c6 {
+      width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .c1 {
+    width: 33%;
+  }
+  .c2 {
+    width: 33%;
+  }
+  .c3 {
+    width: 34%;
+  }
+  .c4 {
+    width: 33%;
+  }
+  .c5 {
+    width: 33%;
+  }
+  .c6 {
       width: 34%;
     }
-    .c4 {
-      width: 33%;
-    }
-    .c5 {
-      width: 33%;
-    }
-    .c6 {
-        width: 34%;
-      }
-  }
- 
- 
+}
+
