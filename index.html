@@ -13,8 +13,8 @@
 <body>
     <form class="container">
     <div class="c1">
-    <h4>Clientes Nuevos</h4>
-    <hr>
+    <h4 class="nuevos">Clientes Nuevos</h4>
+    <hr class="nuevos">
     
     <input id="pplatahd" type="radio" name="plan" value="27580"><label for="pplatahd">Plan Plata HD</label> <br>
     <input id="porohd" type="radio" name="plan" value="32450"><label for="porohd">Plan Oro HD</label> <br>
@@ -23,8 +23,8 @@
     <input id="broncelite" type="radio" name="plan" value="20610"><label for="broncelite">Plan Bronce Lite</label>
     </div>  
     <div class="c2">
-    <h4>Clientes Cartera</h4>
-    <hr>
+    <h4 class="cartera">Clientes Cartera</h4>
+    <hr class="cartera">
     <input id="bronce" type="radio" name="plan" value="24940"><label for="bronce">Pack Bronce</label> <br>
     <input id="broncehd" type="radio" name="plan" value="27590"><label for="broncehd">Pack Bronce HD</label> <br>
     <input id="plata" type="radio" name="plan" value="32860"><label for="plata">Pack Plata</label> <br>
@@ -36,8 +36,8 @@
     </div>  
    
     <div class="c3">
-      <h4>Total de decos</h4>
-      <hr>
+      <h4 class="decos">Total de decos</h4>
+      <hr class="decos">
       <input id="3" type="radio" name="equipos" value="3910"><label for="3">3 decos</label><br>
       <input id="4" type="radio" name="equipos" value="7820"><label for="4">4 decos</label><br>
       <input id="5" type="radio" name="equipos" value="11730"><label for="5">5 decos</label><br>
@@ -46,8 +46,8 @@
       <input id="8" type="radio" name="equipos" value="23460"><label for="8">8 decos</label>
       </div>
       <div class="c4">
-        <h4>Paquetes Premium</h4>
-        <hr>
+        <h4 class="premium">Paquetes Premium</h4>
+        <hr class="premium">
         <input id="tnt" type="checkbox" name="premium1" value="8730"><label class="rvpValor" for="tnt">Tnt $8.730---------></label>
         <input class="cheEspacio" id="rvp1" type="checkbox" name="rvp1" value="-4365"><label class="rvpEspacio" for="rvp1">50%</label><br>
         <input id="tntv" type="checkbox" name="premium2" value="7920"><label for="tntv">Tnt $7.920---------></label>
@@ -57,6 +57,7 @@
         <input id="hbo" type="checkbox" name="premium4" value="7920"><label for="hbo">Hbo-----------------></label>
         <input class="cheEspacio" id="rvp4" type="checkbox" name="rvp4" value="-3960"><label class="rvpEspacio" for="rvp4">50%</label> <br>
         <input id="star" type="checkbox" name="premium5" value="7920"><label for="star">Star Premium</label> <br>
+        <input id="universal" type="checkbox" name="premium13" value="7920"><label for="universal">Universal</label> <br>
         <input id="combo1" type="checkbox" name="premium6" value="7920"><label for="combo1">Combo $7.960</label> <br>
         <input id="combo2" type="checkbox" name="premium7" value="8500"><label for="combo2">Combo $8.500</label> <br>
         <input id="foxsport" type="checkbox" name="premium8" value="9970"><label for="foxsport">Fox Sport----------></label>
@@ -67,11 +68,12 @@
         <input class="cheEspacio" id="rvp7" type="checkbox" name="rvp7" value="-4315"><label class="rvpEspacio" for="rvp7">50%</label> <br>
         <input id="exxotico" type="checkbox" name="premium11" value="8630"><label for="exxotico">Exxotico-----------></label>
         <input class="cheEspacio" id="rvp8" type="checkbox" name="rvp8" value="-4315"><label class="rvpEspacio" for="rvp8">50%</label> <br>
-        <input id="full" type="checkbox" name="premium12" value="1540"><label for="full">Full Service</label>
+        <input id="full" type="checkbox" name="premium12" value="1540"><label for="full">Full Service-------></label>
+        <input class="cheEspacio" id="rvp9" type="checkbox" name="rvp9" value="-770"><label class="rvpEspacio" for="rvp9">50%</label> <br>
         </div> 
     <div class="c5">
-    <h4>Promociones Rvo</h4>
-    <hr>
+    <h4 class="rvo">Promociones Rvo</h4>
+    <hr class="rvo">
     <input id="rvo1" type="radio" name="rvo" value="-2000"><label for="rvo1">$2.000</label><br>
     <input id="rvo2" type="radio" name="rvo" value="-4000"><label for="rvo2">$4.000</label><br>
     <input id="rvo3" type="radio" name="rvo" value="-5000"><label for="rvo3">$5.000</label><br>
@@ -86,9 +88,23 @@
     <input id="rvo12" type="checkbox" name="rvoEquipo" value="-1955"><label for="rvo12">50% deco Adicional</label>
     </div>
     <div class="c6">
+      <h4 class="extras">Extras</h4>
+      <hr class="extras">
+      <input id="recargo" type="checkbox" name="recargo" value="1600"><label class="rvpValor" for="recargo">Recargo x mora $1600</label><br>
+      <input id="tntflex" type="checkbox" name="tntflex" value="3380"><label class="rvpValor" for="tntflex">Tnt flexible $3380</label><br>
+      <input id="deco" type="checkbox" name="deco" value="14990"><label class="rvpValor" for="deco">Deco Adicional $14990</label>
+      <br>
+      <br>
       <div class="flotante" id="resultado"></div>
       <button class="flotanteButton">Borrar</button>
+      <br>
+    <br>
+    <br>
+    <br>
+    <a id="modo" href="https://fcifuentes2.github.io/calculadoraIntegralChile/">Standar</a>
     </div>
+    
+
     </form>
     <br>
        
