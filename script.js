@@ -31,6 +31,10 @@ const premium9Check = document.querySelector('input[name=premium9]:checked')
 const premium10Check = document.querySelector('input[name=premium10]:checked')
 const premium11Check = document.querySelector('input[name=premium11]:checked')
 const premium12Check = document.querySelector('input[name=premium12]:checked')
+const premium13Check = document.querySelector('input[name=premium13]:checked')
+const recargoCheck = document.querySelector('input[name=recargo]:checked')
+const tntCheck = document.querySelector('input[name=tntflex]:checked')
+const decoCheck = document.querySelector('input[name=deco]:checked')
 const rvp1Check = document.querySelector('input[name=rvp1]:checked')
 const rvp2Check = document.querySelector('input[name=rvp2]:checked')
 const rvp3Check = document.querySelector('input[name=rvp3]:checked')
@@ -39,6 +43,7 @@ const rvp5Check = document.querySelector('input[name=rvp5]:checked')
 const rvp6Check = document.querySelector('input[name=rvp6]:checked')
 const rvp7Check = document.querySelector('input[name=rvp7]:checked')
 const rvp8Check = document.querySelector('input[name=rvp8]:checked')
+const rvp9Check = document.querySelector('input[name=rvp9]:checked')
 const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')          
 
 // convertir los valores a String, o colocar un 0 si no elegieron algo
@@ -57,6 +62,10 @@ const premium9 = premium9Check ?  Number(premium9Check.value): 0
 const premium10 = premium10Check ?  Number(premium10Check.value): 0
 const premium11 = premium11Check ?  Number(premium11Check.value): 0
 const premium12 = premium12Check ?  Number(premium12Check.value): 0
+const premium13 = premium13Check ?  Number(premium13Check.value): 0
+const recargo = recargoCheck ?  Number(recargoCheck.value): 0
+const tntflex = tntCheck ?  Number(tntCheck.value): 0
+const deco = decoCheck ?  Number(decoCheck.value): 0 
 const rvp1 = rvp1Check ?  Number(rvp1Check.value): 0
 const rvp2 = rvp2Check ?  Number(rvp2Check.value): 0
 const rvp3 = rvp3Check ?  Number(rvp3Check.value): 0
@@ -65,12 +74,13 @@ const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
 const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
 const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
 const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
+const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
 const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
 
 //suma total se le asigna a variable result
 const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
 premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
-premium12 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvoEquipo;
+premium12 + premium13 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo + recargo + tntflex + deco;
 
 //se asigna valor de variable result a resultado para poder ser mostrado en pantalla
 document.getElementById('resultado').innerHTML = result;
