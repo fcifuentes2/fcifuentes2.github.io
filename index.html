@@ -1,93 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="calculadora.ico">
+    <script type="text/javascript" src="script.js"></script>
+    
+</head>
+<body>
+    <form class="container">
+    <div class="c1">
+    <h4 class="nuevos">Clientes Nuevos</h4>
+    <hr class="nuevos">
+    
+    <input id="pplatahd" type="radio" name="plan" value="27580"><label for="pplatahd">Plan Plata HD</label> <br>
+    <input id="porohd" type="radio" name="plan" value="32450"><label for="porohd">Plan Oro HD</label> <br>
+    <input id="poroplus" type="radio" name="plan" value="37000"><label for="poroplus">Plan Oro Plus HD</label> <br>
+    <input id="oro4k" type="radio" name="plan" value="41230"><label for="oro4k">Plan Oro 4K</label> <br>
+    <input id="broncelite" type="radio" name="plan" value="20610"><label for="broncelite">Plan Bronce Lite</label>
+    </div>  
+    <div class="c2">
+    <h4 class="cartera">Clientes Cartera</h4>
+    <hr class="cartera">
+    <input id="bronce" type="radio" name="plan" value="24940"><label for="bronce">Pack Bronce</label> <br>
+    <input id="broncehd" type="radio" name="plan" value="27590"><label for="broncehd">Pack Bronce HD</label> <br>
+    <input id="plata" type="radio" name="plan" value="32860"><label for="plata">Pack Plata</label> <br>
+    <input id="platahd" type="radio" name="plan" value="35510"><label for="platahd">Pack Plata HD</label> <br> 
+    <input id="orosd" type="radio" name="plan" value="37730"><label for="orosd">Pack Oro</label> <br>
+    <input id="orohd" type="radio" name="plan" value="40380"><label for="orohd">Pack Oro HD</label> <br>
+    <input id="oroplus" type="radio" name="plan" value="41210"><label for="oroplus">Pack Oro Plus</label> <br>
+    <input id="oroplushd" type="radio" name="plan" value="44400"><label for="oroplushd">Plack Oro Plus Hd</label>
+    </div>  
+   
+    <div class="c3">
+      <h4 class="decos">Total de decos</h4>
+      <hr class="decos">
+      <input id="3" type="radio" name="equipos" value="3910"><label for="3">3 decos</label><br>
+      <input id="4" type="radio" name="equipos" value="7820"><label for="4">4 decos</label><br>
+      <input id="5" type="radio" name="equipos" value="11730"><label for="5">5 decos</label><br>
+      <input id="6" type="radio" name="equipos" value="15640"><label for="6">6 decos</label><br>
+      <input id="7" type="radio" name="equipos" value="19550"><label for="7">7 decos</label><br>
+      <input id="8" type="radio" name="equipos" value="23460"><label for="8">8 decos</label>
+      </div>
+      <div class="c4">
+        <h4 class="premium">Paquetes Premium</h4>
+        <hr class="premium">
+        <input id="tnt" type="checkbox" name="premium1" value="8730"><label class="rvpValor" for="tnt">Tnt $8.730---------></label>
+        <input class="cheEspacio" id="rvp1" type="checkbox" name="rvp1" value="-4365"><label class="rvpEspacio" for="rvp1">50%</label><br>
+        <input id="tntv" type="checkbox" name="premium2" value="7920"><label for="tntv">Tnt $7.920---------></label>
+        <input class="cheEspacio" id="rvp2" type="checkbox" name="rvp2" value="-3960"><label class="rvpEspacio" for="rvp2">50%</label> <br>   
+        <input id="tnthd" type="checkbox" name="premium3" value="11300"><label for="tnthd">Tnt HD $11.300--></label>
+        <input class="cheEspacio" id="rvp3" type="checkbox" name="rvp3" value="-5650"><label class="rvpEspacio" for="rvp3">50%</label> <br>
+        <input id="hbo" type="checkbox" name="premium4" value="7920"><label for="hbo">Hbo-----------------></label>
+        <input class="cheEspacio" id="rvp4" type="checkbox" name="rvp4" value="-3960"><label class="rvpEspacio" for="rvp4">50%</label> <br>
+        <input id="star" type="checkbox" name="premium5" value="7920"><label for="star">Star Premium</label> <br>
+        <input id="universal" type="checkbox" name="premium6" value="7920"><label for="universal">Universal</label> <br>
+        <input id="combo1" type="checkbox" name="premium7" value="7920"><label for="combo1">Combo $7.960</label> <br>
+        <input id="combo2" type="checkbox" name="premium8" value="10500"><label for="combo2">Combo $10.500</label> <br>
+        <input id="star+" type="checkbox" name="premium9" value="8500"><label for="star+">Star+ $8.500</label> <br>
+        <input id="disney" type="checkbox" name="premium10" value="6500"><label for="disney">Disney $6.500</label> <br>
+        <input id="foxsport" type="checkbox" name="premium11" value="9970"><label for="foxsport">Fox Sport----------></label>
+        <input class="cheEspacio" id="rvp5" type="checkbox" name="rvp5" value="-4985"><label class="rvpEspacio" for="rvp5">50%</label> <br>
+        <input id="todostar" type="checkbox" name="premium12" value="13360"><label for="todostar">Todo Star</label><br>
+        <input id="hotpack" type="checkbox" name="premium13" value="8630"><label for="hotpack">Hot Pack-----------></label>
+        <input class="cheEspacio" id="rvp7" type="checkbox" name="rvp7" value="-4315"><label class="rvpEspacio" for="rvp7">50%</label> <br>
+        <input id="exxotico" type="checkbox" name="premium14" value="8630"><label for="exxotico">Exxotico-----------></label>
+        <input class="cheEspacio" id="rvp8" type="checkbox" name="rvp8" value="-4315"><label class="rvpEspacio" for="rvp8">50%</label> <br>
+        <input id="full" type="checkbox" name="premium15" value="1540"><label for="full">Full Service-------></label>
+        <input class="cheEspacio" id="rvp9" type="checkbox" name="rvp9" value="-770"><label class="rvpEspacio" for="rvp9">50%</label> <br>
+        </div> 
+    <div class="c5">
+    <h4 class="rvo">Promociones Rvo</h4>
+    <hr class="rvo">
+    <input id="rvo1" type="radio" name="rvo" value="-2000"><label for="rvo1">$2.000</label><br>
+    <input id="rvo2" type="radio" name="rvo" value="-4000"><label for="rvo2">$4.000</label><br>
+    <input id="rvo3" type="radio" name="rvo" value="-5000"><label for="rvo3">$5.000</label><br>
+    <input id="rvo4" type="radio" name="rvo" value="-6000"><label for="rvo4">$6.000</label><br>
+    <input id="rvo5" type="radio" name="rvo" value="-7000"><label for="rvo5">$7.000</label><br>
+    <input id="rvo6" type="radio" name="rvo" value="-8000"><label for="rvo6">$8.000</label><br>
+    <input id="rvo7" type="radio" name="rvo" value="-9000"><label for="rvo7">$9.000</label><br>
+    <input id="rvo8" type="radio" name="rvo" value="-10000"><label for="rvo8">$10.000</label><br>
+    <input id="rvo9" type="radio" name="rvo" value="-11000"><label for="rvo9">$11.000</label><br>
+    <input id="rvo10" type="radio" name="rvo" value="-12000"><label for="rvo10">$12.000</label><br>
+    <input id="rvo11" type="radio" name="rvo" value="-14000"><label for="rvo11">$14.000</label><br>
+    <input id="rvo12" type="radio" name="rvo" value="-16000"><label for="rvo12">$16.000</label><br>
+    <input id="rvo13" type="checkbox" name="rvoEquipo" value="-1955"><label for="rvo13">50% deco Adicional</label>
+    </div>
+    <div class="c6">
+      <h4 class="extras">Extras</h4>
+      <hr class="extras">
+      <input id="recargo" type="checkbox" name="recargo" value="1600"><label class="rvpValor" for="recargo">Recargo x mora $1600</label><br>
+      <input id="tntflex" type="checkbox" name="tntflex" value="3380"><label class="rvpValor" for="tntflex">Tnt flexible $3380</label><br>
+      <input id="deco" type="checkbox" name="deco" value="14990"><label class="rvpValor" for="deco">Deco Adicional $14990</label>
+      <br>
+      <br>
+      <div class="flotante" id="resultado"></div>
+      <button class="flotanteButton">Borrar</button>
+      <br>
+      <br>
+      <br>
+      <br>
+    <a id="modo" href="https://fcifuentes2.github.io/calculadoraIntegralChile/">Standar</a>
+    </div>
+    
 
-
-// carga la funcion despues de que se cargue por completo el documento
-window.onload = function(){
-    addEventListener('change', obtenerTotal);
-}
-// buscar el <form> y guardarlo en una variable
-const form = document.querySelector('form');
-
-// decir que en el evento enviar se sume el total
-form.addEventListener('change', obtenerTotal);
-
-
-function obtenerTotal(event) {
-
-// evitar enviar el formulario que ocasiona que se refresque la pagina
-event.preventDefault();
-
-// obtener todos los input radio y checkbox
-const planRadio = document.querySelector('input[name=plan]:checked')
-const rvoRadio = document.querySelector('input[name=rvo]:checked')
-const equiposRadio = document.querySelector('input[name=equipos]:checked')
-const premium1Check = document.querySelector('input[name=premium1]:checked')
-const premium2Check = document.querySelector('input[name=premium2]:checked')
-const premium3Check = document.querySelector('input[name=premium3]:checked')
-const premium4Check = document.querySelector('input[name=premium4]:checked')
-const premium5Check = document.querySelector('input[name=premium5]:checked')
-const premium6Check = document.querySelector('input[name=premium6]:checked')
-const premium7Check = document.querySelector('input[name=premium7]:checked')
-const premium8Check = document.querySelector('input[name=premium8]:checked')
-const premium9Check = document.querySelector('input[name=premium9]:checked')
-const premium10Check = document.querySelector('input[name=premium10]:checked')
-const premium11Check = document.querySelector('input[name=premium11]:checked')
-const premium12Check = document.querySelector('input[name=premium12]:checked')
-const premium13Check = document.querySelector('input[name=premium13]:checked')
-const premium14Check = document.querySelector('input[name=premium14]:checked')
-const premium15Check = document.querySelector('input[name=premium15]:checked')
-const recargoCheck = document.querySelector('input[name=recargo]:checked')
-const tntCheck = document.querySelector('input[name=tntflex]:checked')
-const decoCheck = document.querySelector('input[name=deco]:checked')
-const rvp1Check = document.querySelector('input[name=rvp1]:checked')
-const rvp2Check = document.querySelector('input[name=rvp2]:checked')
-const rvp3Check = document.querySelector('input[name=rvp3]:checked')
-const rvp4Check = document.querySelector('input[name=rvp4]:checked')
-const rvp5Check = document.querySelector('input[name=rvp5]:checked')
-const rvp6Check = document.querySelector('input[name=rvp6]:checked')
-const rvp7Check = document.querySelector('input[name=rvp7]:checked')
-const rvp8Check = document.querySelector('input[name=rvp8]:checked')
-const rvp9Check = document.querySelector('input[name=rvp9]:checked')
-const rvoCheck = document.querySelector('input[name=rvoEquipo]:checked')          
-
-// convertir los valores a String, o colocar un 0 si no elegieron algo
-const plan = planRadio ?  Number(planRadio.value): 0
-const rvo = rvoRadio ?  Number(rvoRadio.value): 0
-const equipos = equiposRadio ?  Number(equiposRadio.value): 0
-const premium1 = premium1Check ?  Number(premium1Check.value): 0
-const premium2 = premium2Check ?  Number(premium2Check.value): 0
-const premium3 = premium3Check ?  Number(premium3Check.value): 0
-const premium4 = premium4Check ?  Number(premium4Check.value): 0
-const premium5 = premium5Check ?  Number(premium5Check.value): 0
-const premium6 = premium6Check ?  Number(premium6Check.value): 0
-const premium7 = premium7Check ?  Number(premium7Check.value): 0
-const premium8 = premium8Check ?  Number(premium8Check.value): 0
-const premium9 = premium9Check ?  Number(premium9Check.value): 0
-const premium10 = premium10Check ?  Number(premium10Check.value): 0
-const premium11 = premium11Check ?  Number(premium11Check.value): 0
-const premium12 = premium12Check ?  Number(premium12Check.value): 0
-const premium13 = premium13Check ?  Number(premium13Check.value): 0
-const premium14 = premium14Check ?  Number(premium14Check.value): 0
-const premium15 = premium15Check ?  Number(premium15Check.value): 0
-const recargo = recargoCheck ?  Number(recargoCheck.value): 0
-const tntflex = tntCheck ?  Number(tntCheck.value): 0
-const deco = decoCheck ?  Number(decoCheck.value): 0 
-const rvp1 = rvp1Check ?  Number(rvp1Check.value): 0
-const rvp2 = rvp2Check ?  Number(rvp2Check.value): 0
-const rvp3 = rvp3Check ?  Number(rvp3Check.value): 0
-const rvp4 = rvp4Check ?  Number(rvp4Check.value): 0
-const rvp5 = rvp5Check ?  Number(rvp5Check.value): 0
-const rvp6 = rvp6Check ?  Number(rvp6Check.value): 0
-const rvp7 = rvp7Check ?  Number(rvp7Check.value): 0
-const rvp8 = rvp8Check ?  Number(rvp8Check.value): 0
-const rvp9 = rvp9Check ?  Number(rvp9Check.value): 0
-const rvoEquipo = rvoCheck ?  Number(rvoCheck.value): 0
-
-//suma total se le asigna a variable result
-const result = plan + rvo + equipos + premium1 + premium2 + premium3 + premium4 + 
-premium5 + premium6 + premium7 + premium8 + premium9 + premium10 + premium11 +
-premium12 + premium13 + premium14 + premium15 + rvp1 + rvp2 + rvp3 + rvp4 + rvp5 + rvp6 + rvp7 + rvp8 + rvp9 + rvoEquipo + recargo + tntflex + deco;
-
-//se asigna valor de variable result a resultado para poder ser mostrado en pantalla
-document.getElementById('resultado').innerHTML = result;
-
-}
+    </form>
+    <br>
+       
+    
+</body>
+</html>
