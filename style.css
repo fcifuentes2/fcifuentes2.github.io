@@ -75,7 +75,9 @@ left: 265px;
 position: absolute;
 left: 245px;
 }
-
+#sugerencia{
+  font-size: 13px;
+}
 
 .c1,
 .c2,
@@ -122,6 +124,10 @@ left: 245px;
     position: fixed;
     top: 400px;
     right: 5px;
+  }
+  #resultado {
+    color: yellow;
+    font-weight: bolder;
   }
   .c1 {
     order: 2;
@@ -182,4 +188,3 @@ left: 245px;
       width: 34%;
     }
 }
-
